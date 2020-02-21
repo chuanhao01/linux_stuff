@@ -31,6 +31,9 @@ genfstab -pU /mnt >> /mnt/etc/fstab
 # Go into the system
 arch-chroot /mnt
 
+# Set up the mirrorlist for the system
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+
 # Set hostname
 vim /etc/hostname
 vim /etc/hosts
@@ -65,4 +68,13 @@ mkdir /boot/EFI
 mount /dev/nvme0n1p1 /boot/EFI
 grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+```bash
+# Setting up kde desktop
+sudo pacman -Syu
+sudo pacman -S xorg
+sudp pacman -S plasma-meta kde-applications
+sudo systemctl enable sddm
+sudo systemctl enable NetworkManager
 ```
