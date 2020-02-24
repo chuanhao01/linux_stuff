@@ -55,7 +55,7 @@ systemctl enable dhcpcd
 
 # Setup new user
 useradd chuanhao01
-usermod -aG wheel,audio,video,optical,storage,power
+usermod -aG wheel,audio,video,optical,storage,power chuanhao01
 mkhomedir_helper chuanhao01
 passwd chuanhao01
 
@@ -77,4 +77,32 @@ sudo pacman -S xorg
 sudp pacman -S plasma-meta kde-applications
 sudo systemctl enable sddm
 sudo systemctl enable NetworkManager
+```
+
+```bash
+# Setting up i3-wm with xorg
+sudo pacman -S xorg xorg-xinit
+sudo pacman -S i3
+sudo pacman -S alacritty
+sudo pacman -S slim
+
+# Backup the xinitrc file
+sudo cp /etc/X11/xinit/xintrc /etc/X11/xinit/xintrc.bak
+# remove the last few lines in the xinitrc file for xterm
+sudo vim /etc/X11/xinit/xintrc
+# Create the xinitrc file in the home dir
+vim ~/.xinitrc
+```
+
+```bash
+# Installing yay
+sudo pacman -S base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+```bash
+# Installing google chrome
+yay -S google-chrome
 ```
