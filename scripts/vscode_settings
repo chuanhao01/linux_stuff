@@ -21,10 +21,10 @@
         },
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["s"],
-            "after": ["\\", "\\", "2", "s"],
-        },
+        // {
+        //     "before": ["s"],
+        //     "after": ["\\", "\\", "2", "s"],
+        // },
         {
             "before": [">"],
             "after": [">", ">"]
@@ -41,14 +41,14 @@
             "before": ["W"],
             "after": ["g", "t", "<esc>"]
         },
-        {
-            "before": ["f"],
-            "after": ["s"],
-        },
-        {
-            "before": ["F"],
-            "after": ["S"],
-        },
+        // {
+        //     "before": ["f"],
+        //     "after": ["s"],
+        // },
+        // {
+        //     "before": ["F"],
+        //     "after": ["S"],
+        // },
         // {
         //     "before": [";"],
         //     "after": ["m", "1", "A", ";", "<esc>", "`", "1", "a", "<esc>"]
@@ -59,10 +59,13 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.colorTheme": "Oceanic Plus",
     "zenMode.hideLineNumbers": false,
-    "terminal.integrated.inheritEnv": false,
     "html.mirrorCursorOnMatchingTag": false,
     "vim.sneak": true,
     "vim.camelCaseMotion.enable": true,
     "vim.sneakReplacesF": true,
-    "vim.replaceWithRegister": true
+    "vim.replaceWithRegister": true,
+    "eslint.alwaysShowStatus": true,
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "terminal.integrated.fontFamily": "'MesloLGS NF'",
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'MesloLGS NF'"
 }
