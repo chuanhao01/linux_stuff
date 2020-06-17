@@ -1,0 +1,71 @@
+{
+    "breadcrumbs.enabled": true,
+    "editor.lineNumbers": "relative",
+    "editor.smoothScrolling": true,
+    "window.zoomLevel": 0,
+    "vim.easymotion": true,
+    "vim.easymotionMarkerFontSize": "20",
+    "vim.easymotionMarkerBackgroundColor": "blue",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["k", "j"],
+            "after": ["<esc>"]
+        },
+        {
+            "before": [";", ";"],
+            "after": ["<esc>", "m", "1", "A", ";", "<esc>", "`", "1", "a"]
+        },
+        {
+            "before": [",", ","],
+            "after": ["<esc>", "m", "1", "A", ",", "<esc>", "`", "1", "a"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // {
+        //     "before": ["s"],
+        //     "after": ["\\", "\\", "2", "s"],
+        // },
+        {
+            "before": [">"],
+            "after": [">", ">"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "<"]
+        },
+        {
+            "before": ["Q"],
+            "after": ["g", "T", "<esc>"]
+        },
+        {
+            "before": ["W"],
+            "after": ["g", "t", "<esc>"]
+        },
+        // {
+        //     "before": ["f"],
+        //     "after": ["s"],
+        // },
+        // {
+        //     "before": ["F"],
+        //     "after": ["S"],
+        // },
+        // {
+        //     "before": [";"],
+        //     "after": ["m", "1", "A", ";", "<esc>", "`", "1", "a", "<esc>"]
+        // },
+    ],
+    "files.autoSave": "afterDelay",
+    "workbench.activityBar.visible": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.colorTheme": "Oceanic Plus",
+    "zenMode.hideLineNumbers": false,
+    "html.mirrorCursorOnMatchingTag": false,
+    "vim.sneak": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.sneakReplacesF": true,
+    "vim.replaceWithRegister": true,
+    "eslint.alwaysShowStatus": true,
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "terminal.integrated.fontFamily": "'MesloLGS NF'",
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'MesloLGS NF'"
+}
