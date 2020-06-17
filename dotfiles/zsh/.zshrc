@@ -130,6 +130,10 @@ if [ -f '/home/chuanhao01/temp/google-cloud-sdk/path.zsh.inc' ]; then . '/home/c
 if [ -f '/home/chuanhao01/temp/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/chuanhao01/temp/google-cloud-sdk/completion.zsh.inc'; fi
 
 # >>> Own aliases >>>
+
+# Making sure dolphin icons work
+export XDG_CURRENT_DESKTOP=KDE
+
 # Git aliases
 alias gs='git status'
 alias ga='git add'
