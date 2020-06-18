@@ -211,7 +211,11 @@ bar {
 }
 
 # Start i3lock
-bindsym $mod+ctrl+l exec i3lock -c 000000
+bindsym $mod+Mod1+l exec i3lock -c 000000
+
+# Additional settings for mointors
+bindsym $mod+ctrl+h focus output left
+bindsym $mod+ctrl+l focus output right
 
 # >>>>>>>>>>>>>>> i3-groups
 
