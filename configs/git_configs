@@ -1,0 +1,10 @@
+# git config --global --list
+
+credential.helper=cache --timeout=7200
+user.email=EMAIL_USED_TO_SIGN_GIT_COMMITS
+user.name=USERNAME_OF_SINGING_GIT_COMMITS
+user.signingkey=GPG_KEY
+core.editor=vim
+core.pager=less -X
+commit.gpgsign=true
+gpg.program=gpg

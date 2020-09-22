@@ -1,0 +1,13 @@
+[credential]
+	helper = cache --timeout=7200
+[user]
+	email = EMAIL_HERE
+	name = NAME_HERE
+	signingkey = GPG_KEY_HERE_IF_NEEDED
+[core]
+	editor = vim
+	pager = less -X
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
