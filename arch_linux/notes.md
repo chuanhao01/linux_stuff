@@ -13,4 +13,14 @@ This is the utility used for selecting displays and HDMI outputs
 arandr
 ```
 
-## 
+## Adding bluetooth earpiece
+
+For arch linux:
+
+You follow these steps for bluetooth drivers and bluetooth earpiece.  
+- [Bluetooth](https://wiki.archlinux.org/index.php/bluetooth)
+- [Bluetooth audio](https://wiki.archlinux.org/index.php/bluetooth_headset)
+
+TL:DR
+- Get bluetooth
+- Get pulseaudio-bluetooth
