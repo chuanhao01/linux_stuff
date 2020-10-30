@@ -7,18 +7,18 @@
     "vim.easymotionMarkerFontSize": "20",
     "vim.easymotionMarkerBackgroundColor": "blue",
     "vim.insertModeKeyBindings": [
-        {
-            "before": ["k", "j"],
-            "after": ["<esc>"]
-        },
+        // {
+        //     "before": ["k", "j"],
+        //     "after": ["<esc>"]
+        // },
         {
             "before": [";", ";"],
             "after": ["<esc>", "m", "1", "A", ";", "<esc>", "`", "1", "a"]
         },
-        {
-            "before": [",", ","],
-            "after": ["<esc>", "m", "1", "A", ",", "<esc>", "`", "1", "a"]
-        },
+        // {
+        //     "before": [",", ","],
+        //     "after": ["<esc>", "m", "1", "A", ",", "<esc>", "`", "1", "a"]
+        // },
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         // {
@@ -67,5 +67,13 @@
     "eslint.alwaysShowStatus": true,
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
     "terminal.integrated.fontFamily": "'MesloLGS NF'",
-    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'MesloLGS NF'"
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'MesloLGS NF'",
+    "editor.fontSize": 13,
+    "emmet.includeLanguages": {
+        "jinja-html": "html"
+    },
+    "files.associations": {
+        "*.j2": "jinja-html"
+    },
+    "workbench.iconTheme": "material-icon-theme"
 }
