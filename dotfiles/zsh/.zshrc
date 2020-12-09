@@ -83,54 +83,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/chuanhao01/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/chuanhao01/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/chuanhao01/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/chuanhao01/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/chuanhao01/temp/google-cloud-sdk/path.zsh.inc' ]; then . '/home/chuanhao01/temp/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/chuanhao01/temp/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/chuanhao01/temp/google-cloud-sdk/completion.zsh.inc'; fi
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> My Zsh configs >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 
 # >>> Own aliases >>>
-
 # Making sure dolphin icons work
 export XDG_CURRENT_DESKTOP=KDE
 
@@ -160,8 +115,62 @@ alias sc='import png:- | xclip -selection clipboard -t image/png'
 
 alias updatetime='sudo ntpdate 0.us.pool.ntp.org'
 
+alias copy='xclip -selection c' # To pipe stdout to clipboard
 # <<< Own aliases <<<
+
 export PATH="$PATH:/home/chuanhao01/home/system_files/flutter/bin"
+# KDE
+export XDG_CURRENT_DESKTOP="KDE"
+export QT_QPA_PLATFORMTHEME="qt5ct"
+# TTY
+export GPG_TTY=$TTY
+
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< My Zsh configs <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/chuanhao01/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/chuanhao01/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/chuanhao01/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/chuanhao01/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/chuanhao01/temp/google-cloud-sdk/path.zsh.inc' ]; then . '/home/chuanhao01/temp/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/chuanhao01/temp/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/chuanhao01/temp/google-cloud-sdk/completion.zsh.inc'; fi
+
+# For fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
