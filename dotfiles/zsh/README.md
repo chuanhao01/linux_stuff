@@ -5,7 +5,7 @@ These config file correspond to:
 For this zshrc configuration, I have:
 - oh-my-zsh
   - zsh-syntax-highlighting
-- Own custom configs
+- My own custom configs
 - Anaconda
 - fzf
 - powerlevel10k
