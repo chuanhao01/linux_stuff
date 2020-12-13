@@ -1,0 +1,1 @@
+This dir contains the dotfiles seperated by each category
