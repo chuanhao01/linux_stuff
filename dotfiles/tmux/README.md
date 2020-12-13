@@ -1,4 +1,6 @@
+These config file correspond to:
+- `tmux_conf_local_config` &rarr; `.tmux.conf.local`
+
 For tmux config, you are using:
 - oh my tmux (.tmux)
-
-Configs is the local overriding file
+- My own custom tmux configs
