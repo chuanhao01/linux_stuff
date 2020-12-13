@@ -1,6 +1,11 @@
-For this zsh configuration, I have:
+These config file correspond to:
+- `zshrc_config` &rarr; `.zshrc`
+- `p10k_zsh_config` &rarr; `.p10k.zsh`
+
+For this zshrc configuration, I have:
 - oh-my-zsh
   - zsh-syntax-highlighting
-- powerlevel10k
-- fzf
+- Own custom configs
 - Anaconda
+- fzf
+- powerlevel10k
