@@ -93,6 +93,7 @@ alias gs='git status'
 alias ga='git add'
 alias gl='git log --format="%C(auto)%h - %C(bold yellow)%cn %C(bold green)(%cs) %C(auto)%s%d" --graph --color=always'
 alias gc='git commit'
+alias gf='git fetch'
 alias gch='git checkout'
 alias gp='git push'
 
@@ -111,6 +112,7 @@ alias c='clear'
 alias o='xdg-open'
 alias lbo='libreoffice'
 alias sc='import png:- | xclip -selection clipboard -t image/png'
+alias ta='tmux attach'
 
 alias updatetime='sudo ntpdate 0.us.pool.ntp.org'
 
