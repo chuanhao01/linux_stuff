@@ -96,6 +96,7 @@ alias gc='git commit'
 alias gf='git fetch'
 alias gch='git checkout'
 alias gp='git push'
+alias gpu='git pull'
 
 # Setting up paths
 goschgit () {
