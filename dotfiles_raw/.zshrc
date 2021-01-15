@@ -85,8 +85,6 @@ source $ZSH/oh-my-zsh.sh
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> My Zsh configs >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 
 # >>> Own aliases >>>
-# Making sure dolphin icons work
-export XDG_CURRENT_DESKTOP=KDE
 
 # Git aliases
 alias gs='git status'
@@ -94,6 +92,7 @@ alias ga='git add'
 alias gl='git log --format="%C(auto)%h - %C(bold yellow)%cn %C(bold green)(%cs) %C(auto)%s%d" --graph --color=always'
 alias gc='git commit'
 alias gf='git fetch'
+alias gb='git branch'
 alias gch='git checkout'
 alias gp='git push'
 alias gpu='git pull'
@@ -118,18 +117,32 @@ alias ta='tmux attach'
 alias updatetime='sudo ntpdate 0.us.pool.ntp.org'
 
 alias copy='xclip -selection c' # To pipe stdout to clipboard
+
 # <<< Own aliases <<<
 
-export PATH="$PATH:/home/chuanhao01/home/system_files/flutter/bin"
+# >>> Own Exports >>>
+
+# Making sure dolphin icons work
+export XDG_CURRENT_DESKTOP=KDE
+
 # KDE
 export XDG_CURRENT_DESKTOP="KDE"
 export QT_QPA_PLATFORMTHEME="qt5ct"
+
 # TTY
 export GPG_TTY=$TTY
 
 # fzf with ripgrep
 export FZF_DEFAULT_COMMAND="rg . --files --hidden --no-ignore-vcs"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# Docker
+export DOCKER_BUILDKIT='1' # Buildkit so docker go brrrr
+
+# Path
+export PATH="$PATH:/home/chuanhao01/home/system_files/flutter/bin"
+
+# <<< Own Exports <<<
 
 # >>> fzf git >>>
 is_in_git_repo() {
