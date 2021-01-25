@@ -24,3 +24,17 @@ You follow these steps for bluetooth drivers and bluetooth earpiece.
 TL:DR
 - Get bluetooth
 - Get pulseaudio-bluetooth
+
+## Vscodium
+Hopefully nothing is different from vscode
+
+To create a sym link for the code command to work
+1. Check `where codium` to find out where the bin is located
+2. Usually in `/usr/bin`
+3. Need sym link from `codium` to `code`
+```
+ln -s /usr/bin/codium /usr/bin/code
+```
+
+[Link](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace) for `product.json`
+`products.json` is in `/usr/share/vscodium-bin/resources/app/product.json`
