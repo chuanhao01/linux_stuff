@@ -7,6 +7,8 @@ This is the utility u use to handle and manage your network/wifi connections
 nmtui
 ```
 
+The configs are stored in: `/etc/NetworkManager/system-connections`
+
 ## arandr
 This is the utility used for selecting displays and HDMI outputs
 ```
