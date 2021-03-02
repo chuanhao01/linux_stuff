@@ -40,3 +40,16 @@ ln -s /usr/bin/codium /usr/bin/code
 
 [Link](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace) for `product.json`
 `products.json` is in `/usr/share/vscodium-bin/resources/app/product.json`
+
+## For external hard drives mounting and compatibility
+
+For most hard drives, they will be using the ntfs fs format for the hard drive.
+As such to read and write to the hard drive you need an additional library in order for reading, writing and mounting to work.
+This is true even for KDE dolphin and other GUI based applications.
+Also vifm and mounting in general requires this.
+
+```
+sudo pacman -S ntfs-3g
+```
+
+[Link](https://wiki.archlinux.org/index.php/NTFS-3G)
