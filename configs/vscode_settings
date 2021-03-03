@@ -11,10 +11,10 @@
         //     "before": ["k", "j"],
         //     "after": ["<esc>"]
         // },
-        {
-            "before": [";", ";"],
-            "after": ["<esc>", "m", "1", "A", ";", "<esc>", "`", "1", "a"]
-        },
+        // {
+        //     "before": [";", ";"],
+        //     "after": ["<esc>", "m", "1", "A", ";", "<esc>", "`", "1", "a"]
+        // },
         // {
         //     "before": [",", ","],
         //     "after": ["<esc>", "m", "1", "A", ",", "<esc>", "`", "1", "a"]
@@ -67,7 +67,7 @@
     "eslint.alwaysShowStatus": true,
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
     "terminal.integrated.fontFamily": "'MesloLGS NF'",
-    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'MesloLGS NF'",
+    "editor.fontFamily": "'MesloLGS NF', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 13,
     "emmet.includeLanguages": {
         "jinja-html": "html"
@@ -75,5 +75,23 @@
     "files.associations": {
         "*.j2": "jinja-html"
     },
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "markdown.extension.toc.updateOnSave": false,
+    "latex-workshop.latex.outDir": "%DIR%/output",
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODUwLFwiaGVpZ2h0XCI6MTEwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+    "settings.cycle": [
+        {
+            "id": "vim_fold", // must be unique
+            "overrideWorkspaceSettings": false,
+            "values": [
+                {
+                    "vim.foldfix": true
+                },
+                {
+                    "vim.foldfix": false
+                }
+            ]
+        }
+    ],
+    "vim.foldfix": true,
 }
