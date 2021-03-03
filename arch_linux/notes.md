@@ -9,6 +9,27 @@ nmtui
 
 The configs are stored in: `/etc/NetworkManager/system-connections`
 
+## iwctl
+
+When installing arch linux, you would need to use `iwctl` for network confiurations.  
+This is for wireless connection install, like on laptops.
+For wired you should already have a connection.
+```bash
+iwctl # To start the iwctl cli
+
+# What the prompt looks like below
+[iwd]# 
+```
+
+List of common commands below:
+```bash
+device list # get list of device, example wlan0
+# This case device is replaced with wlan0, we are assuming this is your device
+station wlan0 scan # Scan for networks
+station wlan0 get-networks # Get all the networks info
+station device connect SSID # SSID is the network 'name'
+```
+
 ## arandr
 This is the utility used for selecting displays and HDMI outputs
 ```
