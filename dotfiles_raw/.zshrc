@@ -138,6 +138,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Docker
 export DOCKER_BUILDKIT='1' # Buildkit so docker go brrrr
+export COMPOSE_DOCKER_CLI_BUILD=1 # docker-compose buildkit go brrrr
 
 # Path
 export PATH="$PATH:/home/chuanhao01/home/system_files/flutter/bin"
@@ -179,7 +180,7 @@ _gt() {
 
 _gl() {
   is_in_git_repo || return
-  git log --format="%C(auto)%h - %C(bold yellow)%cn %C(bold green)(%cs) %C(auto)%s%d" --graph --color=always |
+  git log --format="%C(auto)%h - %C(bold yellow)%cn %C(bold green)(%cs) %C(auto)%s%d" --graph --color=always --all |
   # is_in_git_repo || return
   # git log --date=short --format="%C(green)%C(bold)%cd %C(auto)%h%d %s (%an)" --graph --color=always |
   fzf-down --ansi --no-sort --reverse --multi --bind 'ctrl-s:toggle-sort' \
