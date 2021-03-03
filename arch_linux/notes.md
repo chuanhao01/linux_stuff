@@ -28,7 +28,10 @@ TL:DR
 - Get pulseaudio-bluetooth
 
 ## Vscodium
-Hopefully nothing is different from vscode
+
+~~Hopefully nothing is different from vscode~~  
+**The `code` Arch package is also OSS**  
+You can refer to this github issue [here](https://github.com/VSCodium/vscodium/issues/598)  
 
 To create a sym link for the code command to work
 1. Check `where codium` to find out where the bin is located
@@ -37,6 +40,7 @@ To create a sym link for the code command to work
 ```
 ln -s /usr/bin/codium /usr/bin/code
 ```
+
 
 [Link](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace) for `product.json`
 `products.json` is in `/usr/share/vscodium-bin/resources/app/product.json`
