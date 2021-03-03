@@ -47,6 +47,10 @@ ln -s /usr/bin/codium /usr/bin/code
 
 ## For external hard drives mounting and compatibility
 
+**Note:** I was dumb. It was because of special characters being in some of the file and folder names. You cannot have that on windows so for cross compat you also cannot have it on ntfs. (You would think being able to create a folder and file should be enough for me to figure it out but no. Took way too long and spent way too much time on this)
+
+**Seperate Note:** For ntfs on partions shared with windows. Its does have an issue with fast boot. So if you dual boot, do take note of this.
+
 For most hard drives, they will be using the ntfs fs format for the hard drive.
 As such to read and write to the hard drive you need an additional library in order for reading, writing and mounting to work.
 This is true even for KDE dolphin and other GUI based applications.
