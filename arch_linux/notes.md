@@ -61,3 +61,9 @@ sudo pacman -S ntfs-3g
 ```
 
 [Link](https://wiki.archlinux.org/index.php/NTFS-3G)
+
+## Arch linux, Latex, VSCode and Overleaf
+
+**TL:DR** Just use overlaf with github integration if you need it.
+
+You can refer to this [medium article](https://medium.com/@rcpassos/writing-latex-documents-in-visual-studio-code-with-latex-workshop-d9af6a6b2815) on how to set it up and use it.  
