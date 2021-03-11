@@ -1,4 +1,4 @@
-user.email=chuanhaolim@gmail.com
-user.name=chuanhao01
+user.email=email
+user.name=username
 core.editor=vi
 credential.helper=cache --timeout=3600
