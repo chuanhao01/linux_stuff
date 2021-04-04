@@ -1,8 +1,6 @@
 {
     "breadcrumbs.enabled": true,
     "editor.lineNumbers": "relative",
-    "editor.smoothScrolling": true,
-    "window.zoomLevel": 0,
     "vim.easymotion": true,
     "vim.easymotionMarkerFontSize": "20",
     "vim.easymotionMarkerBackgroundColor": "blue",
@@ -94,4 +92,11 @@
         }
     ],
     "vim.foldfix": true,
+    "window.titleBarStyle": "custom",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
 }
