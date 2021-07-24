@@ -111,3 +111,10 @@ HOOKS=(base udev autodetect modconf block filesystems keyboard fsck)
 HOOKS=(base udev autodetect keyboard keymap modconf block encrypt lvm2 filesystems fsck)
 HOOKS=(base udev autodetect keyboard modconf block encrypt lvm2 filesystems fsck)
 ```
+
+```
+# After initial grub setup
+sudo pacman -Sy
+
+# xorg and i3
+```
