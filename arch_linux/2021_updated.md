@@ -116,5 +116,15 @@ HOOKS=(base udev autodetect keyboard modconf block encrypt lvm2 filesystems fsck
 # After initial grub setup
 sudo pacman -Sy
 
-# xorg and i3
+# More tools
+sudo pacman -S git make
+
+# Install yay
+sudo pacman -S base-devel
+git clone https://aur.archlinux.org/yay.git
+makepkg -si
+
+# xorg and qtile
+# Switching to qtile because python scripting with rofi is better, I can spare some resources
+sudo pacman -S xorg-server xorg-xinit
 ```
