@@ -68,12 +68,10 @@ visudo
 vim /etc/mkinitcpio.conf
 mkinitcpio -p linux
 
-# edit grub
-vim /etc/default/grub
-
 # Installing grub and the bootloader
 pacman -S intel-ucode amd-ucode
 pacman -S grub efibootmgr
+vim /etc/default/grub
 grub-install --target=i386-pc --boot-directory /boot --recheck /dev/sdX # BIOS
 grub-install --target=x86_64-efi --boot-directory /boot --efi-directory /efi  --bootloader-id=grub_uefi --recheck # EFI
  # --removable for usb
@@ -117,14 +115,33 @@ HOOKS=(base udev autodetect keyboard modconf block encrypt lvm2 filesystems fsck
 sudo pacman -Sy
 
 # More tools
-sudo pacman -S git make
+sudo pacman -S git make udisks2
 
 # Install yay
 sudo pacman -S base-devel
 git clone https://aur.archlinux.org/yay.git
 makepkg -si
 
-# xorg and qtile
+# xorg
 # Switching to qtile because python scripting with rofi is better, I can spare some resources
 sudo pacman -S xorg-server xorg-xinit
+cp /etc/X11/xinit/xinitc .xinitrc
+vim .xinitrc
+
+# xorg testing
+sudo pacman -S xterm
+startx
+sudo pacman -Rs xterm
+sudo pacman -Rsc xterm
+
+# Install python
+# We are using pyenv for python version management
+# https://github.com/pyenv/pyenv#installation
+sudo pacman -S pyenv
+sudo pacman -S --needed base-devel openssl zlib xz
+pyenv install --list # Install latest version of python, -v verbose
+
+sudo pacman -S qtile
+
+
 ```
