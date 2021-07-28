@@ -115,7 +115,9 @@ HOOKS=(base udev autodetect keyboard modconf block encrypt lvm2 filesystems fsck
 sudo pacman -Sy
 
 # More tools
-sudo pacman -S git make udisks2
+sudo pacman -S git make udisks2 alacritty
+# udisks2 for mounting
+# alacritty for a terminal
 
 # Install yay
 sudo pacman -S base-devel
@@ -124,7 +126,7 @@ makepkg -si
 
 # xorg
 # Switching to qtile because python scripting with rofi is better, I can spare some resources
-sudo pacman -S xorg-server xorg-xinit
+sudo pacman -S xorg xorg-xinit
 cp /etc/X11/xinit/xinitc .xinitrc
 vim .xinitrc
 
@@ -134,14 +136,18 @@ startx
 sudo pacman -Rs xterm
 sudo pacman -Rsc xterm
 
-# Install python
+# For VMWare to work woo
+sudo pacman -S  xf86-input-vmmouse xf86-video-vmware mesa
+
+# Install python (optional)
 # We are using pyenv for python version management
 # https://github.com/pyenv/pyenv#installation
 sudo pacman -S pyenv
-sudo pacman -S --needed base-devel openssl zlib xz
 pyenv install --list # Install latest version of python, -v verbose
+pyenv global $VERSION
 
+# Install qtile
+# https://wiki.archlinux.org/title/Qtile
 sudo pacman -S qtile
-
-
+sudo pacman -S --needed base-devel openssl zlib xz
 ```
