@@ -1,0 +1,78 @@
+{
+  "breadcrumbs.enabled": true,
+  "editor.lineNumbers": "relative",
+  "vim.insertModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.goToReferences"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "after": [">", ">"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "<"]
+    },
+    {
+      "before": ["Q"],
+      "after": ["g", "T", "<esc>"]
+    },
+    {
+      "before": ["W"],
+      "after": ["g", "t", "<esc>"]
+    }
+  ],
+  "workbench.activityBar.visible": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "zenMode.hideLineNumbers": false,
+  "vim.sneak": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.sneakReplacesF": true,
+  "vim.replaceWithRegister": true,
+  "eslint.alwaysShowStatus": true,
+  "terminal.integrated.fontFamily": "'MesloLGS NF'",
+  "editor.fontFamily": "'Monoid', 'MesloLGS NF', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "emmet.includeLanguages": {
+    "jinja-html": "html"
+  },
+  "files.associations": {
+    "*.j2": "jinja-html"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "markdown.extension.toc.updateOnSave": false,
+  "latex-workshop.latex.outDir": "%DIR%/output",
+  "window.titleBarStyle": "custom",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Oceanic Plus",
+  "vim.foldfix": true,
+  "discord.removeRemoteRepository": true,
+  "discord.removeLowerDetails": true,
+  "discord.removeDetails": true,
+  "editor.cursorStyle": "line",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "editor.fontSize": 12.5,
+  "editor.bracketPairColorization.enabled": true
+}
