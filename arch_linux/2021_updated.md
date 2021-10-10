@@ -1,7 +1,13 @@
 Upataed for 2021, doing this on windows and on github online woo!
 
-Just code, git gud
-References:
+Some FAQ  
+```
+Q: Why split out /boot
+A: Because I don't want decrypt taking 17x longer, also it is secure enough
+
+Q: General Partition
+A: /efi /boot /
+```
 
 
 ```bash
