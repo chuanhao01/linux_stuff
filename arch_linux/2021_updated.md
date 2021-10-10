@@ -40,7 +40,8 @@ mount /dev/vg/NAME /mnt
 mount /dev/sdX /mnt/boot
 mount /dev/sdX /mnt/efi
 
-pacstrap /mnt base linux-firmware linux linux-headers linux-lts linux-lts-headers vi vim vifm tmux networkmanager lvm2 mkinitcpio sudo
+pacstrap /mnt base linux-firmware linux linux-headers  vi vim vifm tmux networkmanager lvm2 mkinitcpio sudo
+// danger: linux-lts linux-lts-headers
 
 genfstab -pU /mnt > /mnt/etc/fstab
 
