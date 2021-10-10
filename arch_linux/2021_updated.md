@@ -59,6 +59,9 @@ vim /etc/locale.gen
 locale-gen
 vim /etc/locale.conf
 
+ln -sf /usr/share/zoneinfo/Singapore /etc/localtime
+hwclock --systohc
+
 passwd
 
 # Setup new user
@@ -99,9 +102,6 @@ GRUB_ENABLE_CRYPTODISK=y
 127.0.0.1 localhost
 ::1   localhost
 127.0.1.1 hostname-localdomain  localhost
-
-ln -sf /usr/share/zoneinfo/Singapore /etc/localtime
-hwclock --systohc
 ```
 
 ```
