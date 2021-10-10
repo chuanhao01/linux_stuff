@@ -6,7 +6,7 @@ Q: Why split out /boot
 A: Because I don't want decrypt taking 17x longer, also it is secure enough
 
 Q: General Partition
-A: /efi /boot /
+A: /efi -> efi /boot -> Linux Filesystem / -> LVM
 ```
 
 
