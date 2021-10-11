@@ -63,8 +63,15 @@ ln -s /usr/bin/codium /usr/bin/code
 ```
 
 
-[Link](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace) for `product.json`
+[Link](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace) for `products.json`
 `products.json` is in `/usr/share/vscodium-bin/resources/app/product.json`
+
+## Code-OSS
+For the Arch linux code package
+
+`products.json` is in `/usr/lib/code/product.json`
+[Github Comment](https://github.com/VSCodium/vscodium/issues/418#issuecomment-643664182)
+
 
 ## For external hard drives mounting and compatibility
 
