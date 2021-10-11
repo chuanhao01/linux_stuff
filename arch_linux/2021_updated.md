@@ -56,6 +56,7 @@ vim /etc/hostname
 vim /etc/hosts
 
 # Set locale.gen
+# Install US as well, just for other locales
 vim /etc/locale.gen
 locale-gen
 vim /etc/locale.conf
