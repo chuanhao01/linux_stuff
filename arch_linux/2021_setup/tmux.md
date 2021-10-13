@@ -4,7 +4,7 @@ This is mainly for oh-my-tmux, you can find the repo [here](https://github.com/g
 
 ## Steps
 
-```
+```bash
 cd
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
