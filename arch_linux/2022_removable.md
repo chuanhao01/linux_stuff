@@ -88,7 +88,7 @@ GRUB_TIMEOUT=0
 GRUB_CMDLINE_LINUX="... cryptdevice=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:cryptlvm root=/dev/vg/root ..." # UUID is of partiion, /dev/sdX4
 GRUB_ENABLE_CRYPTODISK=y
 
-grub-install --target=i386-pc --boot-directory /boot --recheck --removable /dev/sdX # BIOS --force?
+grub-install --target=i386-pc --boot-directory /boot --recheck --removable /dev/sdX # BIOS --force? https://askubuntu.com/questions/1161746/grub-install-error-will-not-proceed-with-blocklists
 grub-install --target=x86_64-efi --boot-directory /boot --efi-directory /efi  --bootloader-id=grub_uefi --recheck # EFI
 
 grub-mkconfig -o /boot/grub/grub.cfg
